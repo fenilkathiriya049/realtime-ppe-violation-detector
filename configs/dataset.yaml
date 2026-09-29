@@ -1,0 +1,13 @@
+# configs/dataset.yaml
+path: ../data/processed  # Root dataset directory relative to execution
+train: images/train
+val: images/val
+test: images/test        # Optional
+
+# Class mapping (PPE violation detector)
+names:
+  0: hard-hat
+  1: no-hat
+  2: vest
+  3: no-vest
+  4: person

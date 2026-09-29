@@ -1,0 +1,27 @@
+# Data & Models
+data/
+models/
+runs/
+*.pt
+*.onnx
+*.engine
+*.bin
+
+# Environments & Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.env
+
+# Conda / Virtualenv
+venv/
+.venv/
+env/
+conda/
+
+# IDE & OS files (Good practice to include)
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

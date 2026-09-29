@@ -1,0 +1,35 @@
+# --- Deep Learning & Computer Vision ---
+# Note: For CUDA-accelerated PyTorch, install torch/torchvision via index-url first
+torch>=2.2.0
+torchvision>=0.17.0
+ultralytics>=8.3.0
+opencv-python-headless>=4.9.0.80
+#albumentations>=1.3.1,<1.4.15
+
+# --- Model Optimization & Inference ---
+onnx>=1.16.0
+onnxruntime>=1.18.0
+# Uncomment below if running ONNX inference on an NVIDIA GPU with CUDA:
+# onnxruntime-gpu>=1.18.0
+
+# --- Tracking & Numerical Processing ---
+numpy>=1.26.0,<2.0.0
+scipy>=1.12.0
+lapx>=0.5.5               # Linear assignment solver required by ByteTrack
+filterpy>=1.4.5           # Kalman filter support for trackers
+
+# --- API & Serving ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+python-multipart>=0.0.9   # Required for file/image uploads in FastAPI
+websockets>=12.0          # Streaming frame detections
+
+# --- Configuration & Logging ---
+pyyaml>=6.0.1
+wandb>=0.17.0             # Experiment tracking (Weights & Biases)
+tqdm>=4.66.0
+
+# --- Testing & Quality Assurance ---
+pytest>=8.1.0
+httpx>=0.27.0             # FastAPI TestClient dependency
