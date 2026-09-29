@@ -1,13 +1,13 @@
 # configs/dataset.yaml
-path: ../data/processed  # Root dataset directory relative to execution
-train: images/train
-val: images/val
-test: images/test        # Optional
+path: D:/Dl_pro_yolo/data/processed
+train: train/images
+val: valid/images
+test: test/images
 
-# Class mapping (PPE violation detector)
+nc: 5
 names:
-  0: hard-hat
-  1: no-hat
-  2: vest
-  3: no-vest
-  4: person
+  0: helmet
+  1: no_helmet
+  2: none
+  3: person
+  4: vest
