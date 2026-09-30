@@ -26,3 +26,6 @@ conda/
 .DS_Store
 Thumbs.db
 
+# Output predictions & test images
+output_safety_audit.jpg
+outputs/
