@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  ppe-monitoring-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ppe_safety_engine
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

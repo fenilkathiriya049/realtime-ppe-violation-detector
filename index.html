@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real-Time PPE Safety Monitoring</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 24px;
+    }
+    .video-card {
+      display: inline-block;
+      border: 2px solid #333333;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+    }
+    img {
+      display: block;
+      width: 800px;
+      max-width: 90vw;
+    }
+  </style>
+</head>
+<body>
+  <h2>Live PPE Compliance & Violation Monitor</h2>
+  <div class="video-card">
+    <img src="http://127.0.0.1:8000/api/v1/stream/webcam" alt="Live PPE Stream" />
+  </div>
+</body>
+</html>
